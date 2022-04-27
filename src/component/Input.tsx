@@ -2,6 +2,7 @@ import { InputField } from "../utils/interface";
 
 function Input({ type, placeholder, setValue }: InputField) {
   const changeValue = (value: string) => {
+    // Setting value of parent Input State
     setValue(value);
   };
 
