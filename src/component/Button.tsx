@@ -14,7 +14,7 @@ function Button(this: any, { text, action }: ButtonField) {
           // Adding a not allowed cursor to the button if metamask not connected
           !account && "cursor-not-allowed"
         } px-4 py-2 font-semibold text-sm bg-sky-500 text-white rounded-md shadow-sm opacity-100 mt-5 m-auto w-full`}
-        onClick={() => action}
+        onClick={action}
       >
         {text}
       </button>
